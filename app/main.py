@@ -13,5 +13,9 @@ def getdata(options):
     data = response.text
     return data
 
+@app.route("/")
+def welcome():
+    return "welcome to dataservice"
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True,port=80)
